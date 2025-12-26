@@ -1,3 +1,9 @@
-const { add } = require("./math");
+const items = ["Learn Git", "Learn CI", "Deploy App"];
 
-console.log("2 + 3 =", add(2, 3));
+const list = document.getElementById("list");
+
+items.forEach((item) => {
+  const li = document.createElement("li");
+  li.textContent = item;
+  list.appendChild(li);
+});
